@@ -23,6 +23,10 @@ class Pokemon
   end
 
   def change_hp
+    pikachu = "UPDATE pokemon SET hp = 59  WHERE id = 1"
+    magikarp = "UPDATE pokemon SET hp = 0  WHERE id = 2"
+    db.execute(pikachu, magikarp, hp, self.id)
+
   end
 
 end
