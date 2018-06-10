@@ -12,6 +12,7 @@ describe "Pokemon" do
 
   describe ".initialize" do
     it 'is initialized with keyword arguments of name, type and db' do
+      binding.pry
       expect(pokemon).to respond_to(:id)
       expect(pokemon).to respond_to(:name)
       expect(pokemon).to respond_to(:type)
