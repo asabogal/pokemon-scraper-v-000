@@ -3,14 +3,13 @@ class Pokemon
 
   @@all = []
 
-  attr_accessor :id, :name, :type, :db, :hp
-  def initialize(id:, name:, type:, db:, hp: nil)
+  attr_accessor :id, :name, :type, :db
+  def initialize(id:, name:, type:, db:)
     # binding.pry
     @id = id
     @name = name
     @type = type
     @db = db
-    @hp = hp
     @@all << self
   end
 
