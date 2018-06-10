@@ -24,10 +24,7 @@ class Pokemon
   end
 
   def alter_hp(new_hp, db)
-    pikachu = "UPDATE pokemon SET hp = 59  WHERE id = 1"
-    magikarp = "UPDATE pokemon SET hp = 0  WHERE id = 2"
-    db.execute(pikachu, magikarp, new_hp, self.id)
-
+    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", new_hp, self.id)
   end
 
 end
