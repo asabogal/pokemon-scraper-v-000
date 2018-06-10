@@ -12,4 +12,7 @@ class Pokemon
     @@all << self
   end
 
+  def save
+  end
+
 end
