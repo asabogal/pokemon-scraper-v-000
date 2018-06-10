@@ -22,6 +22,7 @@ class Pokemon
     Pokemon.new(id: find_pokemon[0], name: find_pokemon[1], type: find_pokemon[2], db: db)
   end
 
-  def
+  def change_hp
+  end
 
 end
